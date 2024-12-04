@@ -1,3 +1,3 @@
-const { copyFilesyc } = require('fs');
+const { copyFileSync } = require('fs');
 
-copyFilesyc('package.json', 'build/package.json');
+copyFileSync('package.json', 'build/package.json');

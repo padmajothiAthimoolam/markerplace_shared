@@ -1,7 +1,7 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
-  "main": "index.js",
+  "types": "./src/index.d.js",
   "description": "Helper library for MarketPlace app",
   "engines": {
     "node": ">=20"
@@ -27,17 +27,20 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
+  "files": [
+    "build",
+    "src"
+  ],
   "exports": {
     ".": {
-      "import": "./esm/index.js",
-      "require": "./cjs/index.js"
+      "import": "./src/index.js",
+      "require": "./src/index.js"
     },
     "./icons": {
       "import": "./esm/icons/index.js",
       "require": "./cjs/icons/index.js"
     }
   },
-  "types": "/src/index.d.ts",
   "dependencies": {
     "@elastic/elasticsearch": "^8.16.2",
     "cloudinary": "^2.5.1",

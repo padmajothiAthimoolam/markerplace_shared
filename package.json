@@ -25,7 +25,7 @@
     "url": "git+https://github.com/padmajothiAthimoolam/markerplace_shared.git"
   },
   "publishConfig": {
-    "registry": "http://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "exports": {
     ".": {
